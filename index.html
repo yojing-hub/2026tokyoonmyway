@@ -938,6 +938,12 @@ h1, h2, h3, h4, strong, b,
 .shop-empty, .shop-price-note { margin: 10px 0 0; font-size: .88rem; }
 @media (min-width: 700px) { .shop-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 </style>
+<style>
+.event-photo { position: relative; margin: 10px 0 0; }
+.event-photo img { display: block; width: 100%; height: clamp(115px, 35vw, 210px); object-fit: cover; border-radius: 14px; background: var(--paper); }
+.event-photo figcaption { position: absolute; right: 7px; bottom: 7px; }
+.event-photo a { display: inline-block; color: var(--ink); background: var(--paper); border-radius: 999px; padding: 3px 8px; font-size: .75rem; }
+</style>
 </head>
 <body>
 <header class="topbar">
@@ -1133,15 +1139,51 @@ h1, h2, h3, h4, strong, b,
 </div>
 </div>
 <div class="timeline">
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">CI100 桃園 → 成田</div></div><div class="time">09:30–13:30</div></div><div class="meta-row"><span class="tag air"><svg aria-hidden="true" class="tiny-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.85" viewbox="0 0 24 24"><path d="M4 12 20 6l-4 6 4 6Z"></path><path d="M10 12H4"></path></svg>飛機</span><span class="tag must">必去</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">入境、領行李、機場麥當勞</div></div><div class="time">13:30–15:30</div></div><div class="meta-row"><span class="tag walk">步行</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">前往 APA 淺草藏前北，辦理入住</div><p class="event-note">京成 Access 特急直達淺草</p></div><div class="time">15:30–17:30</div></div><div class="meta-row"><span class="tag train">京成／都營</span><span class="tag">約 60–80 分</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">SUNDRUG 東武淺草站前店</div></div><div class="time">17:30–17:50</div></div><div class="meta-row"><span class="tag walk">步行</span><span class="tag">約 10–13 分</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">雷門、仲見世通、淺草寺</div></div><div class="time">17:50–18:20</div></div><div class="meta-row"><span class="tag walk">步行</span><span class="tag">約 8–12 分</span><span class="tag must">必去</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">OS DRUG 淺草店</div><p class="event-note">較早打烊</p></div><div class="time">18:20–18:50</div></div><div class="meta-row"><span class="tag walk">步行</span><span class="tag">約 5–8 分</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">唐吉訶德淺草店</div></div><div class="time">18:50–19:30</div></div><div class="meta-row"><span class="tag walk">步行</span><span class="tag">約 4–7 分</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">淺草拉麵晚餐</div><p class="event-note">避開一蘭</p></div><div class="time">19:30–20:30</div></div><div class="meta-row"><span class="tag walk">步行</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">吾妻橋、隅田川夜景 → 返回藏前</div></div><div class="time">20:30–21:00+</div></div><div class="meta-row"><span class="tag walk">步行</span><span class="tag">約 15–25 分</span></div></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">CI100 桃園 → 成田</div><p class="event-note">桃園機場 → 成田機場 T2</p></div><div class="time">09:30–13:30</div></div><div class="meta-row"><span class="tag air"><svg aria-hidden="true" class="tiny-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.85" viewbox="0 0 24 24"><path d="M4 12 20 6l-4 6 4 6Z"></path><path d="M10 12H4"></path></svg>飛機</span><span class="tag must">必去</span></div>
+<figure class="event-photo" data-photo-id="trip-01">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/China_Airlines_Boeing_777-300ER_TPE.JPG/1280px-China_Airlines_Boeing_777-300ER_TPE.JPG" alt="CI100 桃園 → 成田" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://commons.wikimedia.org/wiki/File%3AChina_Airlines_Boeing_777-300ER_TPE.JPG" target="_blank" rel="noopener noreferrer" aria-label="CI100 桃園 → 成田照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">入境、領行李、機場麥當勞</div><p class="event-note">成田 T2 本館 4F，安檢外</p></div><div class="time">13:30–15:30</div></div><div class="meta-row"><span class="tag walk">步行</span></div>
+<figure class="event-photo" data-photo-id="trip-02">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Narita_Airport_Terminal_2_exterior.jpg" alt="成田機場第 2 航廈外觀" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://commons.wikimedia.org/wiki/File%3ANarita_Airport_Terminal_2_exterior.jpg" target="_blank" rel="noopener noreferrer" aria-label="成田機場第 2 航廈外觀照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">前往 APA 淺草藏前北，辦理入住</div><p class="event-note">京成 Access 特急直達都營淺草站；A2b 出口步行約 3 分</p></div><div class="time">15:30–17:30</div></div><div class="meta-row"><span class="tag train">京成／都營</span><span class="tag">約 60–80 分</span></div>
+<figure class="event-photo" data-photo-id="trip-03">
+<img src="https://www3.apahotel.com/image/840gaikannight153421280960.jpg" alt="前往 APA 淺草藏前北，辦理入住" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://www3.apahotel.com/hotel/syutoken/tokyo/asakusa-kuramae-kita/gallery/" target="_blank" rel="noopener noreferrer" aria-label="前往 APA 淺草藏前北，辦理入住照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">SUNDRUG 東武淺草站前店</div><p class="event-note">東武淺草站前</p></div><div class="time">17:30–17:50</div></div><div class="meta-row"><span class="tag walk">步行</span><span class="tag">約 10–13 分</span></div>
+<figure class="event-photo" data-photo-id="trip-04">
+<img src="https://image.ekiten.jp/contribution/old/483/5152474/4833121_20201211040558.jpg" alt="SUNDRUG 東武淺草站前店" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://www.ekiten.jp/shop_7159453/" target="_blank" rel="noopener noreferrer" aria-label="SUNDRUG 東武淺草站前店照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">雷門、仲見世通、淺草寺</div><p class="event-note">雷門 → 仲見世通 → 淺草寺本堂</p></div><div class="time">17:50–18:20</div></div><div class="meta-row"><span class="tag walk">步行</span><span class="tag">約 8–12 分</span><span class="tag must">必去</span></div>
+<figure class="event-photo" data-photo-id="trip-05">
+<img src="https://picty.jp/storage/product_sample/1279/sample-1279.jpg" alt="雷門、仲見世通、淺草寺" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://picty.jp/search/detail/free/1279" target="_blank" rel="noopener noreferrer" aria-label="雷門、仲見世通、淺草寺照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">OS DRUG 淺草店</div><p class="event-note">從淺草寺步行至新仲見世商店街</p></div><div class="time">18:20–18:50</div></div><div class="meta-row"><span class="tag walk">步行</span><span class="tag">約 5–8 分</span></div>
+<figure class="event-photo" data-photo-id="trip-06">
+<img src="https://www.asakusa-shinnaka.com/images/2011/10/MG_6428.jpg" alt="OS DRUG 淺草店" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://www.asakusa-shinnaka.com/shop-info/1447/" target="_blank" rel="noopener noreferrer" aria-label="OS DRUG 淺草店照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">唐吉訶德淺草店</div><p class="event-note">新仲見世 → 淺草六區</p></div><div class="time">18:50–19:30</div></div><div class="meta-row"><span class="tag walk">步行</span><span class="tag">約 4–7 分</span></div>
+<figure class="event-photo" data-photo-id="trip-07">
+<img src="https://spacelab-system.jp/upload/facility/11584/1/AE%E3%83%89%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%9B%E3%83%BC%E3%83%86%E6%B5%85%E8%8D%89%E5%BA%971.jpg" alt="唐吉訶德淺草店" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://spacelab-system.jp/facility/11584" target="_blank" rel="noopener noreferrer" aria-label="唐吉訶德淺草店照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">淺草拉麵晚餐</div><p class="event-note">淺草寺旁或回藏前飯店途中；避開一蘭</p></div><div class="time">19:30–20:30</div></div><div class="meta-row"><span class="tag walk">步行</span></div>
+<figure class="event-photo" data-photo-id="trip-08">
+<img src="https://san-tatsu.jp/assets/uploads/2023/07/21220551/e796d08c625e10bf73779ec171aa4f13-750x488.jpg" alt="淺草拉麵晚餐" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://san-tatsu.jp/articles/255032/" target="_blank" rel="noopener noreferrer" aria-label="淺草拉麵晚餐照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">吾妻橋、隅田川夜景 → 返回藏前</div><p class="event-note">吾妻橋 → 沿隅田川往駒形橋 → 藏前</p></div><div class="time">20:30–21:00+</div></div><div class="meta-row"><span class="tag walk">步行</span><span class="tag">約 15–25 分</span></div>
+<figure class="event-photo" data-photo-id="trip-09">
+<img src="https://www.gotokyo.org/en/spot/282/images/main.webp" alt="吾妻橋、隅田川夜景 → 返回藏前" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://www.gotokyo.org/en/spot/282/index.html" target="_blank" rel="noopener noreferrer" aria-label="吾妻橋、隅田川夜景 → 返回藏前照片來源">照片來源</a></figcaption>
+</figure></div></div>
 </div>
 </div>
 <div aria-labelledby="tab-day2" class="card day-panel" id="day2" role="tabpanel">
@@ -1155,16 +1197,56 @@ h1, h2, h3, h4, strong, b,
 </div>
 </div>
 <div class="timeline">
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">飯店 → 上野動物園弁天門</div><p class="event-note">銀座線：淺草 → 上野，再步行</p></div><div class="time">08:40–09:15</div></div><div class="meta-row"><span class="tag metro">地鐵</span><span class="tag walk">步行</span><span class="tag">約 25–35 分</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">上野動物園</div></div><div class="time">09:30–11:00</div></div><div class="meta-row"><span class="tag must">必去</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">前往六本木、午餐</div></div><div class="time">11:00–12:30</div></div><div class="meta-row"><span class="tag metro">地鐵</span><span class="tag">約 35–45 分</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">國立新美術館</div><p class="event-note">參觀建築與公共空間</p></div><div class="time">12:30–13:05</div></div><div class="meta-row"><span class="tag walk">館內參觀</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">21_21 DESIGN SIGHT</div></div><div class="time">13:20–14:20</div></div><div class="meta-row"><span class="tag walk">步行</span><span class="tag">約 10–15 分</span><span class="tag must">必去</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">步行至六本木之丘</div></div><div class="time">14:20–14:45</div></div><div class="meta-row"><span class="tag walk">約 17–25 分</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">森美術館</div></div><div class="time">14:45–15:45</div></div><div class="meta-row"><span class="tag must">必去</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">前往東京鐵塔周邊，自由活動與晚餐</div><p class="event-note">大江戶線：六本木 → 赤羽橋，再步行</p></div><div class="time">15:45–18:45</div></div><div class="meta-row"><span class="tag metro">地鐵</span><span class="tag walk">步行</span><span class="tag">約 25–35 分</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">東京鐵塔 Main Deck 登塔</div></div><div class="time">19:00–20:00</div></div><div class="meta-row"><span class="tag must">必去</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">返回飯店</div><p class="event-note">赤羽橋／大門 → 淺草／藏前</p></div><div class="time">20:00 後</div></div><div class="meta-row"><span class="tag metro">地鐵</span><span class="tag">約 30–45 分</span></div></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">飯店 → 上野動物園弁天門</div><p class="event-note">銀座線：淺草 → 上野 7 號出口 → 弁天門，步行約 8 分</p></div><div class="time">08:40–09:15</div></div><div class="meta-row"><span class="tag metro">地鐵</span><span class="tag walk">步行</span><span class="tag">約 25–35 分</span></div>
+<figure class="event-photo" data-photo-id="trip-10">
+<img src="https://article-image.travel.navitime.jp/img/NTJtrv0038-en/21.jpg" alt="飯店 → 上野動物園弁天門" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://japantravel.navitime.com/en/area/jp/guide/NTJtrv0038-en/" target="_blank" rel="noopener noreferrer" aria-label="飯店 → 上野動物園弁天門照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">上野動物園</div><p class="event-note">由弁天門進入西園</p></div><div class="time">09:30–11:00</div></div><div class="meta-row"><span class="tag must">必去</span></div>
+<figure class="event-photo" data-photo-id="trip-11">
+<img src="https://article-image.travel.navitime.jp/img/NTJtrv0038-en/21.jpg" alt="上野動物園" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://japantravel.navitime.com/en/area/jp/guide/NTJtrv0038-en/" target="_blank" rel="noopener noreferrer" aria-label="上野動物園照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">前往六本木、午餐</div><p class="event-note">日比谷線：上野 → 六本木，走 4a 出口</p></div><div class="time">11:00–12:30</div></div><div class="meta-row"><span class="tag metro">地鐵</span><span class="tag">約 35–45 分</span></div>
+<figure class="event-photo" data-photo-id="trip-12">
+<img src="https://www.slycrow96.com/images/official/02728b.jpg" alt="前往六本木、午餐" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://www.slycrow96.com/st/02728.html" target="_blank" rel="noopener noreferrer" aria-label="前往六本木、午餐照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">國立新美術館</div><p class="event-note">六本木 4a 出口步行約 5 分；參觀建築與公共空間</p></div><div class="time">12:30–13:05</div></div><div class="meta-row"><span class="tag walk">館內參觀</span></div>
+<figure class="event-photo" data-photo-id="trip-13">
+<img src="https://images.forbesjapan.com/media/article/71953/images/editor/8308e02761097c3580cd277b46d9c3963c98922c.jpg?w=1200" alt="國立新美術館" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://forbesjapan.com/articles/detail/71953" target="_blank" rel="noopener noreferrer" aria-label="國立新美術館照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">21_21 DESIGN SIGHT</div><p class="event-note">國立新美術館 → 東京 Midtown Garden</p></div><div class="time">13:20–14:20</div></div><div class="meta-row"><span class="tag walk">步行</span><span class="tag">約 10–15 分</span><span class="tag must">必去</span></div>
+<figure class="event-photo" data-photo-id="trip-14">
+<img src="https://www.gotokyo.org/en/spot/64/images/sub_01.jpg" alt="21_21 DESIGN SIGHT" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://www.gotokyo.org/en/spot/64/index.html" target="_blank" rel="noopener noreferrer" aria-label="21_21 DESIGN SIGHT照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">步行至六本木之丘</div><p class="event-note">東京 Midtown → 六本木交叉口 → 六本木之丘</p></div><div class="time">14:20–14:45</div></div><div class="meta-row"><span class="tag walk">約 17–25 分</span></div>
+<figure class="event-photo" data-photo-id="trip-15">
+<img src="https://www.sasakiseikan.co.jp/img/aboutus_05_r2.jpg" alt="步行至六本木之丘" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://www.sasakiseikan.co.jp/company/aboutus.html" target="_blank" rel="noopener noreferrer" aria-label="步行至六本木之丘照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">森美術館</div><p class="event-note">六本木之丘 Museum Cone → 森大樓 53F</p></div><div class="time">14:45–15:45</div></div><div class="meta-row"><span class="tag must">必去</span></div>
+<figure class="event-photo" data-photo-id="trip-16">
+<img src="https://stat.ameba.jp/user_images/20251025/18/kahluamilk0531/d0/0a/j/o1600119915702971635.jpg" alt="森美術館" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://ameblo.jp/kahluamilk0531/entry-12940956511.html" target="_blank" rel="noopener noreferrer" aria-label="森美術館照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">前往東京鐵塔周邊，自由活動與晚餐</div><p class="event-note">大江戶線：六本木 → 赤羽橋；赤羽橋口步行約 5 分</p></div><div class="time">15:45–18:45</div></div><div class="meta-row"><span class="tag metro">地鐵</span><span class="tag walk">步行</span><span class="tag">約 25–35 分</span></div>
+<figure class="event-photo" data-photo-id="trip-17">
+<img src="https://en.tokyotower.co.jp/event/20240301000184/480_%E5%A4%AA%E9%99%BD%E5%85%89.jpg" alt="前往東京鐵塔周邊，自由活動與晚餐" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://en.tokyotower.co.jp/" target="_blank" rel="noopener noreferrer" aria-label="前往東京鐵塔周邊，自由活動與晚餐照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">東京鐵塔 Main Deck 登塔</div><p class="event-note">東京鐵塔 1F → Main Deck（150 m）</p></div><div class="time">19:00–20:00</div></div><div class="meta-row"><span class="tag must">必去</span></div>
+<figure class="event-photo" data-photo-id="trip-18">
+<img src="https://yakei.jp/photo/1280/tokyotower1st4-1280.jpg" alt="東京鐵塔 Main Deck 登塔" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://yakei.jp/japan/spot.php?i=tokyotower1st" target="_blank" rel="noopener noreferrer" aria-label="東京鐵塔 Main Deck 登塔照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">返回飯店</div><p class="event-note">都營淺草線：大門 → 淺草 A2b 出口</p></div><div class="time">20:00 後</div></div><div class="meta-row"><span class="tag metro">地鐵</span><span class="tag">約 30–45 分</span></div>
+<figure class="event-photo" data-photo-id="trip-19">
+<img src="https://1.bp.blogspot.com/-3sincVtVmo8/XSyBeDD6BNI/AAAAAAAAVbI/tFSjKd7r5rgnqG-l2XmqbAgLGyls-41qQCLcBGAs/s1600/IMG_2766.jpg" alt="返回飯店" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://sanojiro.blogspot.com/2019/07/55005509.html" target="_blank" rel="noopener noreferrer" aria-label="返回飯店照片來源">照片來源</a></figcaption>
+</figure></div></div>
 </div>
 </div>
 <div aria-labelledby="tab-day3" class="card day-panel" id="day3" role="tabpanel">
@@ -1175,19 +1257,71 @@ h1, h2, h3, h4, strong, b,
 
 </div>
 <div class="timeline">
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">飯店 → 小網神社</div><p class="event-note">都營淺草線至人形町，再步行</p></div><div class="time">08:15–08:45</div></div><div class="meta-row"><span class="tag metro">地鐵</span><span class="tag walk">步行</span><span class="tag">約 20–30 分</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">小網神社參拜</div></div><div class="time">08:45–09:15</div></div><div class="meta-row"><span class="tag must">必去</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">前往銀座藝術水族館</div><p class="event-note">日比谷線：人形町 → 銀座</p></div><div class="time">09:15–10:00</div></div><div class="meta-row"><span class="tag metro">地鐵</span><span class="tag">約 20–30 分</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">銀座藝術水族館</div></div><div class="time">10:00–11:15</div></div><div class="meta-row"><span class="tag must">必去</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">步行前往濱離宮恩賜庭園</div><p class="event-note">銀座南側 → 汐留</p></div><div class="time">11:15–11:40</div></div><div class="meta-row"><span class="tag walk">步行</span><span class="tag">約 1.5–2 km／20–30 分</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">濱離宮恩賜庭園賞楓</div></div><div class="time">11:40–12:40</div></div><div class="meta-row"><span class="tag must">必去</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">午餐、前往白金台</div><p class="event-note">汐留 → 白金台</p></div><div class="time">12:40–13:40</div></div><div class="meta-row"><span class="tag metro">地鐵</span><span class="tag">約 30–45 分</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">國立科學博物館附屬自然教育園</div></div><div class="time">13:40–14:40</div></div><div class="meta-row"><span class="tag must">必去</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">前往明治神宮外苑銀杏大道</div></div><div class="time">14:40–15:20</div></div><div class="meta-row"><span class="tag metro">地鐵</span><span class="tag walk">步行</span><span class="tag">約 35–45 分</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">明治神宮外苑銀杏大道</div></div><div class="time">15:20–16:00</div></div><div class="meta-row"><span class="tag must">必去</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">前往澀谷，逛 BEAMS JAPAN SHIBUYA</div></div><div class="time">16:00–17:30</div></div><div class="meta-row"><span class="tag metro">地鐵</span><span class="tag walk">步行</span><span class="tag">約 25–40 分</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">澀谷 PARCO</div></div><div class="time">17:30–19:00</div></div><div class="meta-row"><span class="tag must">必去</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">澀谷晚餐 → 回飯店</div><p class="event-note">銀座線／都營地鐵至淺草</p></div><div class="time">19:00–20:00+</div></div><div class="meta-row"><span class="tag metro">地鐵</span><span class="tag">回程約 35–50 分</span></div></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">飯店 → 小網神社</div><p class="event-note">都營淺草線：淺草 → 人形町 A5 出口，步行約 7 分</p></div><div class="time">08:15–08:45</div></div><div class="meta-row"><span class="tag metro">地鐵</span><span class="tag walk">步行</span><span class="tag">約 20–30 分</span></div>
+<figure class="event-photo" data-photo-id="trip-20">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Ningyocho_Station-1.jpg/1280px-Ningyocho_Station-1.jpg" alt="飯店 → 小網神社" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://commons.wikimedia.org/wiki/File%3ANingyocho_Station-1.jpg" target="_blank" rel="noopener noreferrer" aria-label="飯店 → 小網神社照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">小網神社參拜</div><p class="event-note">回人形町站搭日比谷線，A2 方向</p></div><div class="time">08:45–09:15</div></div><div class="meta-row"><span class="tag must">必去</span></div>
+<figure class="event-photo" data-photo-id="trip-21">
+<img src="https://stat.ameba.jp/user_images/20210602/20/kirsche-farbe/11/bf/j/o1080081014951417201.jpg" alt="小網神社參拜" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://ameblo.jp/kirsche-farbe/entry-12678245683.html" target="_blank" rel="noopener noreferrer" aria-label="小網神社參拜照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">前往銀座藝術水族館</div><p class="event-note">日比谷線：人形町 → 銀座 A7 出口</p></div><div class="time">09:15–10:00</div></div><div class="meta-row"><span class="tag metro">地鐵</span><span class="tag">約 20–30 分</span></div>
+<figure class="event-photo" data-photo-id="trip-22">
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/20/2019_Ginza_Mitsukoshi.jpg" alt="前往銀座藝術水族館" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://commons.wikimedia.org/wiki/File%3A2019_Ginza_Mitsukoshi.jpg" target="_blank" rel="noopener noreferrer" aria-label="前往銀座藝術水族館照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">銀座藝術水族館</div><p class="event-note">銀座三越新館 9F</p></div><div class="time">10:00–11:15</div></div><div class="meta-row"><span class="tag must">必去</span></div>
+<figure class="event-photo" data-photo-id="trip-23">
+<img src="https://rstatic.enjoytokyo.jp/assets/images/spot/08/l_00062670/img_6.png?1738631735=&amp;p=t&amp;w=1800" alt="銀座藝術水族館" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://www.enjoytokyo.jp/spot/l_00062670/" target="_blank" rel="noopener noreferrer" aria-label="銀座藝術水族館照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">步行前往濱離宮恩賜庭園</div><p class="event-note">銀座三越 → 濱離宮大手門</p></div><div class="time">11:15–11:40</div></div><div class="meta-row"><span class="tag walk">步行</span><span class="tag">約 1.5–2 km／20–30 分</span></div>
+<figure class="event-photo" data-photo-id="trip-24">
+<img src="https://image.walkerplus.com/wpimg/walkertouch/wtd/spot/93/n/76993_1.jpg" alt="濱離宮恩賜庭園" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://spring.walkerplus.com/gw/detail/ar0313s76993/" target="_blank" rel="noopener noreferrer" aria-label="濱離宮恩賜庭園照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">濱離宮恩賜庭園賞楓</div><p class="event-note">大手門入園，可從中之御門往汐留</p></div><div class="time">11:40–12:40</div></div><div class="meta-row"><span class="tag must">必去</span></div>
+<figure class="event-photo" data-photo-id="trip-25">
+<img src="https://image.walkerplus.com/wpimg/walkertouch/wtd/spot/93/n/76993_1.jpg" alt="濱離宮恩賜庭園賞楓" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://spring.walkerplus.com/gw/detail/ar0313s76993/" target="_blank" rel="noopener noreferrer" aria-label="濱離宮恩賜庭園賞楓照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">午餐、前往白金台</div><p class="event-note">新橋搭都營淺草線 → 三田轉三田線 → 白金台</p></div><div class="time">12:40–13:40</div></div><div class="meta-row"><span class="tag metro">地鐵</span><span class="tag">約 30–45 分</span></div>
+<figure class="event-photo" data-photo-id="trip-26">
+<img src="https://www.ozmall.co.jp/Content/upload/images/DF3SMF45SWFIXAW5FLSQ7BHELI.jpg" alt="午餐、前往白金台" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://www.ozmall.co.jp/ginza/shiodome-city-center/" target="_blank" rel="noopener noreferrer" aria-label="午餐、前往白金台照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">國立科學博物館附屬自然教育園</div><p class="event-note">白金台 1 號出口步行約 7 分；11/30 臨時開園</p></div><div class="time">13:40–14:40</div></div><div class="meta-row"><span class="tag must">必去</span></div>
+<figure class="event-photo" data-photo-id="trip-27">
+<img src="https://cdn.4travel.jp/img/thumbnails/imk/travelogue_pict/82/09/87/650x_82098765.jpg?updated_at=1718518031" alt="國立科學博物館附屬自然教育園" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://4travel.jp/travelogue/11910384" target="_blank" rel="noopener noreferrer" aria-label="國立科學博物館附屬自然教育園照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">前往明治神宮外苑銀杏大道</div><p class="event-note">白金台搭南北線 → 溜池山王轉銀座線 → 青山一丁目 1 號出口</p></div><div class="time">14:40–15:20</div></div><div class="meta-row"><span class="tag metro">地鐵</span><span class="tag walk">步行</span><span class="tag">約 35–45 分</span></div>
+<figure class="event-photo" data-photo-id="trip-28">
+<img src="https://static.gltjp.com/glt/data/directory/12000/11026/20230702_095343_5a205272_w1920.webp" alt="明治神宮外苑銀杏大道" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://www.gltjp.com/en/directory/item/11026/" target="_blank" rel="noopener noreferrer" aria-label="明治神宮外苑銀杏大道照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">明治神宮外苑銀杏大道</div><p class="event-note">青山通入口 → 銀杏大道；回程可搭外苑前 4a 出口</p></div><div class="time">15:20–16:00</div></div><div class="meta-row"><span class="tag must">必去</span></div>
+<figure class="event-photo" data-photo-id="trip-29">
+<img src="https://static.gltjp.com/glt/data/directory/12000/11026/20230702_095343_5a205272_w1920.webp" alt="明治神宮外苑銀杏大道" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://www.gltjp.com/en/directory/item/11026/" target="_blank" rel="noopener noreferrer" aria-label="明治神宮外苑銀杏大道照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">前往澀谷，逛 BEAMS JAPAN SHIBUYA</div><p class="event-note">銀座線：外苑前 → 澀谷，東急廣場 2F</p></div><div class="time">16:00–17:30</div></div><div class="meta-row"><span class="tag metro">地鐵</span><span class="tag walk">步行</span><span class="tag">約 25–40 分</span></div>
+<figure class="event-photo" data-photo-id="trip-30">
+<img src="https://cdn-cms.beams.co.jp/cdn/cms/photolog/612458/main_bGlxz9.jpg" alt="前往澀谷，逛 BEAMS JAPAN SHIBUYA" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://www.beams.co.jp/photolog/js/612458/" target="_blank" rel="noopener noreferrer" aria-label="前往澀谷，逛 BEAMS JAPAN SHIBUYA照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">澀谷 PARCO</div><p class="event-note">從東急廣場往公園通步行</p></div><div class="time">17:30–19:00</div></div><div class="meta-row"><span class="tag must">必去</span></div>
+<figure class="event-photo" data-photo-id="trip-31">
+<img src="https://images.keizai.biz/shibukei/headline/1741931025_photo.jpg" alt="澀谷 PARCO" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://www.shibukei.com/headline/19028/" target="_blank" rel="noopener noreferrer" aria-label="澀谷 PARCO照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">澀谷晚餐 → 回飯店</div><p class="event-note">銀座線：澀谷 → 淺草 4 號出口</p></div><div class="time">19:00–20:00+</div></div><div class="meta-row"><span class="tag metro">地鐵</span><span class="tag">回程約 35–50 分</span></div>
+<figure class="event-photo" data-photo-id="trip-32">
+<img src="https://image.itmedia.co.jp/business/articles/2003/31/yd_kubota1.jpg" alt="澀谷晚餐 → 回飯店" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://www.itmedia.co.jp/business/articles/2003/31/news053_3.html" target="_blank" rel="noopener noreferrer" aria-label="澀谷晚餐 → 回飯店照片來源">照片來源</a></figcaption>
+</figure></div></div>
 </div>
 </div>
 <div aria-labelledby="tab-day4" class="card day-panel" id="day4" role="tabpanel">
@@ -1200,17 +1334,61 @@ h1, h2, h3, h4, strong, b,
 </div>
 </div>
 <div class="timeline">
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">退房、寄放行李</div></div><div class="time">07:30–08:00</div></div><div class="meta-row"><span class="tag walk">飯店內</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">前往飛木稻荷神社</div></div><div class="time">08:00–08:30</div></div><div class="meta-row"><span class="tag metro">地鐵</span><span class="tag walk">步行</span><span class="tag">約 20–30 分</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">飛木稻荷神社、大銀杏</div></div><div class="time">08:30–09:00</div></div><div class="meta-row"><span class="tag must">必去</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">步行到晴空塔城、周邊散步</div></div><div class="time">09:00–10:00</div></div><div class="meta-row"><span class="tag walk">約 0.8–1 km／12–18 分</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">墨田水族館</div></div><div class="time">10:00–11:30</div></div><div class="meta-row"><span class="tag must">必去</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">前往墨田北齋美術館</div><p class="event-note">押上 → 藏前轉乘 → 兩國</p></div><div class="time">11:30–12:10</div></div><div class="meta-row"><span class="tag metro">地鐵</span><span class="tag walk">步行</span><span class="tag">約 25–40 分</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">墨田北齋美術館</div></div><div class="time">12:10–13:10</div></div><div class="meta-row"><span class="tag must">必去</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">兩國午餐、散步</div></div><div class="time">13:10–14:00</div></div><div class="meta-row"><span class="tag walk">步行</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">返回飯店取行李</div><p class="event-note">大江戶線：兩國 → 藏前，再步行</p></div><div class="time">14:00–14:45</div></div><div class="meta-row"><span class="tag metro">地鐵</span><span class="tag walk">步行</span><span class="tag">約 20–25 分＋取行李</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">出發前往成田機場</div><p class="event-note">京成 Access 特急直達成田</p></div><div class="time">14:45–16:30</div></div><div class="meta-row"><span class="tag train">京成／都營</span><span class="tag">約 65–85 分</span></div></div></div>
-<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">報到、出境、候機 → CI109</div></div><div class="time">16:30–19:30</div></div><div class="meta-row"><span class="tag air"><svg aria-hidden="true" class="tiny-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.85" viewbox="0 0 24 24"><path d="M4 12 20 6l-4 6 4 6Z"></path><path d="M10 12H4"></path></svg>返程</span><span class="tag must">必去</span></div></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">退房、寄放行李</div><p class="event-note">行李寄放飯店櫃檯</p></div><div class="time">07:30–08:00</div></div><div class="meta-row"><span class="tag walk">飯店內</span></div>
+<figure class="event-photo" data-photo-id="trip-33">
+<img src="https://www3.apahotel.com/image/840gaikannight153421280960.jpg" alt="退房、寄放行李" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://www3.apahotel.com/hotel/syutoken/tokyo/asakusa-kuramae-kita/gallery/" target="_blank" rel="noopener noreferrer" aria-label="退房、寄放行李照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">前往飛木稻荷神社</div><p class="event-note">都營淺草線：淺草 → 押上 A3 出口</p></div><div class="time">08:00–08:30</div></div><div class="meta-row"><span class="tag metro">地鐵</span><span class="tag walk">步行</span><span class="tag">約 20–30 分</span></div>
+<figure class="event-photo" data-photo-id="trip-34">
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Oshiage_Station_B3_20120429.JPG" alt="押上站 B3 出入口（晴空塔側）" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://commons.wikimedia.org/wiki/File%3AOshiage_Station_B3_20120429.JPG" target="_blank" rel="noopener noreferrer" aria-label="押上站 B3 出入口（晴空塔側）照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">飛木稻荷神社、大銀杏</div><p class="event-note">沿押上住宅區街道前往神社</p></div><div class="time">08:30–09:00</div></div><div class="meta-row"><span class="tag must">必去</span></div>
+<figure class="event-photo" data-photo-id="trip-35">
+<img src="https://cdn-ak.f.st-hatena.com/images/fotolife/r/rgcocc/20251125/20251125103356.jpg" alt="飛木稻荷神社、大銀杏" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://cocc-rg.hatenablog.jp/entry/2025/12/02/130529" target="_blank" rel="noopener noreferrer" aria-label="飛木稻荷神社、大銀杏照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">步行到晴空塔城、周邊散步</div><p class="event-note">飛木稻荷神社 → 押上站附近 → 晴空塔城</p></div><div class="time">09:00–10:00</div></div><div class="meta-row"><span class="tag walk">約 0.8–1 km／12–18 分</span></div>
+<figure class="event-photo" data-photo-id="trip-36">
+<img src="https://static.gltjp.com/glt/data/directory/12000/11053/20210914_003434_79ddbf32_w640.webp" alt="步行到晴空塔城、周邊散步" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://www.gltjp.com/en/directory/item/11053/" target="_blank" rel="noopener noreferrer" aria-label="步行到晴空塔城、周邊散步照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">墨田水族館</div><p class="event-note">Solamachi 西側 5F・6F</p></div><div class="time">10:00–11:30</div></div><div class="meta-row"><span class="tag must">必去</span></div>
+<figure class="event-photo" data-photo-id="trip-37">
+<img src="https://image.asoview-media.com/image/production/note/article/29173e77-66bd-4ab9-bf7c-71f5780f9767.jpg" alt="墨田水族館" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://www.asoview.com/note/368/" target="_blank" rel="noopener noreferrer" aria-label="墨田水族館照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">前往墨田北齋美術館</div><p class="event-note">押上搭淺草線 → 藏前轉大江戶線 → 兩國 A3 出口</p></div><div class="time">11:30–12:10</div></div><div class="meta-row"><span class="tag metro">地鐵</span><span class="tag walk">步行</span><span class="tag">約 25–40 分</span></div>
+<figure class="event-photo" data-photo-id="trip-38">
+<img src="https://visit-sumida.jp/uploads/2015/07/aa89c4801e68dae2d695052b1dc9a677-750x500.jpg" alt="JR 兩國站周邊（區域參考）" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://visit-sumida.jp/wp/spot/6196" target="_blank" rel="noopener noreferrer" aria-label="JR 兩國站周邊（區域參考）照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">墨田北齋美術館</div><p class="event-note">都營兩國 A3 出口步行約 5 分</p></div><div class="time">12:10–13:10</div></div><div class="meta-row"><span class="tag must">必去</span></div>
+<figure class="event-photo" data-photo-id="trip-39">
+<img src="https://ppap.kinto-jp.com/spots_images/7100-images/01JE346SRPHEVYTW8QCM88YQJK.jpg" alt="墨田北齋美術館" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://ppap.kinto-jp.com/spot/7100" target="_blank" rel="noopener noreferrer" aria-label="墨田北齋美術館照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">兩國午餐、散步</div><p class="event-note">美術館 → JR 兩國站周邊用餐</p></div><div class="time">13:10–14:00</div></div><div class="meta-row"><span class="tag walk">步行</span></div>
+<figure class="event-photo" data-photo-id="trip-40">
+<img src="https://visit-sumida.jp/uploads/2015/07/aa89c4801e68dae2d695052b1dc9a677-750x500.jpg" alt="兩國午餐、散步" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://visit-sumida.jp/wp/spot/6196" target="_blank" rel="noopener noreferrer" aria-label="兩國午餐、散步照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">返回飯店取行李</div><p class="event-note">大江戶線：兩國 → 藏前 A6 出口步行約 3 分</p></div><div class="time">14:00–14:45</div></div><div class="meta-row"><span class="tag metro">地鐵</span><span class="tag walk">步行</span><span class="tag">約 20–25 分＋取行李</span></div>
+<figure class="event-photo" data-photo-id="trip-41">
+<img src="https://www3.apahotel.com/image/840gaikannight153421280960.jpg" alt="返回飯店取行李" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://www3.apahotel.com/hotel/syutoken/tokyo/asakusa-kuramae-kita/gallery/" target="_blank" rel="noopener noreferrer" aria-label="返回飯店取行李照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">出發前往成田機場</div><p class="event-note">都營淺草站搭往成田機場的 Access 特急；「空港第2ビル」下車</p></div><div class="time">14:45–16:30</div></div><div class="meta-row"><span class="tag train">京成／都營</span><span class="tag">約 65–85 分</span></div>
+<figure class="event-photo" data-photo-id="trip-42">
+<img src="https://travel.watch.impress.co.jp/img/trw/list/1212/226/001.jpg" alt="出發前往成田機場" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://b.hatena.ne.jp/entry/s/travel.watch.impress.co.jp/docs/news/1212226.html" target="_blank" rel="noopener noreferrer" aria-label="出發前往成田機場照片來源">照片來源</a></figcaption>
+</figure></div></div>
+<div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">報到、出境、候機 → CI109</div><p class="event-note">成田 T2 本館 3F 華航櫃檯</p></div><div class="time">16:30–19:30</div></div><div class="meta-row"><span class="tag air"><svg aria-hidden="true" class="tiny-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.85" viewbox="0 0 24 24"><path d="M4 12 20 6l-4 6 4 6Z"></path><path d="M10 12H4"></path></svg>返程</span><span class="tag must">必去</span></div>
+<figure class="event-photo" data-photo-id="trip-43">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Narita_Airport_Terminal_2_exterior.jpg" alt="成田機場第 2 航廈外觀" width="640" height="360" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+<figcaption><a href="https://commons.wikimedia.org/wiki/File%3ANarita_Airport_Terminal_2_exterior.jpg" target="_blank" rel="noopener noreferrer" aria-label="成田機場第 2 航廈外觀照片來源">照片來源</a></figcaption>
+</figure></div></div>
 </div>
 </div>
 </section>
