@@ -934,6 +934,7 @@ h1, h2, h3, h4, strong, b,
 .shop-toolbar select { font: inherit; color: var(--ink); background: white; border: 2px solid var(--ink); border-radius: 999px; padding: 6px 10px; }
 .shop-day > h3 { margin: 0 0 10px; font-size: 1.1rem; }
 .watch-shop .meal-label { background: var(--green); }
+.watch-shop .snack-label { background: var(--yellow); }
 .watch-shop .retail-label { background: var(--blue); }
 .shop-empty, .shop-price-note { margin: 10px 0 0; font-size: .88rem; }
 @media (min-width: 700px) { .shop-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
@@ -1405,45 +1406,59 @@ h1, h2, h3, h4, strong, b,
 </div>
 <div class="shop-toolbar">
 <label>日期 <select id="shop-day"><option value="1">Day 1 · 11/28（六）</option><option value="2">Day 2 · 11/29（日）</option><option value="3">Day 3 · 11/30（一）</option><option value="4">Day 4 · 12/1（二）</option></select></label>
-<label>類型 <select id="shop-type"><option value="all">全部</option><option value="food">美食・小吃</option><option value="retail">購物</option></select></label>
+<label>類型 <select id="shop-type"><option value="all">全部</option><option value="retail">購物</option><option value="meal">正餐</option><option value="snack">點心</option></select></label>
 </div>
 <div class="shop-day" data-shop-day="1">
 <h3>淺草・藏前</h3>
 <div class="grid shop-grid">
-<article class="card watch-shop" data-kind="food">
+<article class="card watch-shop" data-kind="meal">
 <div class="meta-row"><span class="tag meal-label">晚餐 · 淺草寺旁</span></div>
 <h4>浅草名代らーめん 与ろゐ屋</h4>
 <p><strong>柚香醬油拉麵 · 約 ¥1,000</strong></p>
 <p>最後點餐 20:30。</p>
 <ul><li><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%B5%85%E8%8D%89%E5%90%8D%E4%BB%A3%E3%82%89%E3%83%BC%E3%82%81%E3%82%93%20%E4%B8%8E%E3%82%8D%E3%82%90%E5%B1%8B%20%E5%8F%B0%E6%9D%B1%E5%8C%BA%E6%B5%85%E8%8D%891-36-7" target="_blank" rel="noopener noreferrer">Google Maps</a></li><li><a href="https://yoroiya.jp/" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li><li><a href="https://tabelog.com/tokyo/A1311/A131102/13003715/dtlrvwlst/B455326535/" target="_blank" rel="noopener noreferrer">食べログ</a></li></ul>
 </article>
-<article class="card watch-shop" data-kind="food">
+<article class="card watch-shop" data-kind="meal">
 <div class="meta-row"><span class="tag meal-label">晚餐 · 藏前飯店附近</span></div>
 <h4>麺屋 上々</h4>
 <p><strong>鴨鹽拉麵 · 約 ¥1,050</strong></p>
 <p>週六晚間 18:00–21:00。</p>
 <ul><li><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%BA%BA%E5%B1%8B%20%E4%B8%8A%E3%80%85%20%E5%8F%B0%E6%9D%B1%E5%8C%BA%E8%94%B5%E5%89%8D3-17-3" target="_blank" rel="noopener noreferrer">Google Maps</a></li><li><a href="https://tabelog.com/tokyo/A1311/A131103/13247871/" target="_blank" rel="noopener noreferrer">食べログ</a></li></ul>
 </article>
-<article class="card watch-shop" data-kind="food">
-<div class="meta-row"><span class="tag meal-label">甜點 · 雷門對面</span></div>
+<article class="card watch-shop" data-kind="snack">
+<div class="meta-row"><span class="tag snack-label">甜點 · 雷門對面</span></div>
 <h4>亀十</h4>
 <p><strong>黑豆沙銅鑼燒 · 約 ¥430</strong></p>
 <p>19:00 打烊；現金、外帶。</p>
 <ul><li><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E4%BA%80%E5%8D%81%20%E6%9D%B1%E4%BA%AC" target="_blank" rel="noopener noreferrer">Google Maps</a></li><li><a href="https://tabelog.com/tokyo/A1311/A131102/13003655/dtlrvwlst/B529332708/" target="_blank" rel="noopener noreferrer">食べログ</a></li></ul>
 </article>
-<article class="card watch-shop" data-kind="food">
-<div class="meta-row"><span class="tag meal-label">甜點 · 新仲見世</span></div>
+<article class="card watch-shop" data-kind="snack">
+<div class="meta-row"><span class="tag snack-label">甜點 · 新仲見世</span></div>
 <h4>舟和 本店</h4>
 <p><strong>芋羊羹、紅豆丸子</strong></p>
 <p>週六 19:30 打烊。</p>
 <ul><li><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E8%88%9F%E5%92%8C%20%E6%9C%AC%E5%BA%97%20%E6%9D%B1%E4%BA%AC" target="_blank" rel="noopener noreferrer">Google Maps</a></li><li><a href="https://asakusanioideyo.com/16/419/" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li></ul>
 </article>
-<article class="card watch-shop" data-kind="food">
-<div class="meta-row"><span class="tag meal-label">甜點 · 藏前</span></div>
+<article class="card watch-shop" data-kind="snack">
+<div class="meta-row"><span class="tag snack-label">甜點 · 藏前</span></div>
 <h4>Dandelion Chocolate 藏前</h4>
 <p><strong>熱巧克力、棉花糖巧克力 S’mores</strong></p>
 <p>19:00 打烊，可在入住後去。</p>
 <ul><li><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Dandelion%20Chocolate%20%E8%97%8F%E5%89%8D%20%E6%9D%B1%E4%BA%AC" target="_blank" rel="noopener noreferrer">Google Maps</a></li><li><a href="https://www.dandelionchocolate-jp.com/pages/factory-cafe-kuramae" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li><li><a href="https://tabelog.com/tokyo/A1311/A131103/13191976/dtlrvwlst/B529383050/" target="_blank" rel="noopener noreferrer">食べログ</a></li></ul>
+</article>
+<article class="card watch-shop" data-kind="meal">
+<div class="meta-row"><span class="tag meal-label">晚餐 · 田原町</span></div>
+<h4>尾張屋 本店</h4>
+<p><strong>蕎麥麵約 ¥800／天婦羅蕎麥麵約 ¥2,000</strong></p>
+<p>週六 20:00 打烊，適合提早吃。</p>
+<ul><li><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B0%BE%E5%BC%B5%E5%B1%8B%20%E6%9C%AC%E5%BA%97%20%E5%8F%B0%E6%9D%B1%E5%8C%BA%E6%B5%85%E8%8D%891-7-1" target="_blank" rel="noopener noreferrer">Google Maps</a></li><li><a href="https://tabelog.com/tokyo/A1311/A131102/13003714/" target="_blank" rel="noopener noreferrer">食べログ</a></li><li><a href="https://www.asakusa-umai.ne.jp/owariya-asakusa-soba-guide/" target="_blank" rel="noopener noreferrer">日本店家資訊</a></li></ul>
+</article>
+<article class="card watch-shop" data-kind="snack">
+<div class="meta-row"><span class="tag snack-label">甜點 · 仲見世旁</span></div>
+<h4>浅草梅園 本店</h4>
+<p><strong>黍米紅豆甜湯（あわぜんざい）約 ¥930（內用）</strong></p>
+<p>週六內用最後點餐 17:30，逛仲見世前可先去。</p>
+<ul><li><a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%B5%85%E8%8D%89%E6%A2%85%E5%9C%92%20%E6%9C%AC%E5%BA%97%20%E5%8F%B0%E6%9D%B1%E5%8C%BA%E6%B5%85%E8%8D%891-31-12" target="_blank" rel="noopener noreferrer">Google Maps</a></li><li><a href="https://www.asakusa-umezono.co.jp/products/" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li><li><a href="https://asakusaumezono.foodre.jp/" target="_blank" rel="noopener noreferrer">日本店家資訊</a></li></ul>
 </article>
 <article class="card watch-shop" data-kind="retail">
 <div class="meta-row"><span class="tag retail-label">購物</span><span class="tag">淺草 · 18:50–19:30</span></div>
@@ -1451,25 +1466,25 @@ h1, h2, h3, h4, strong, b,
 <p>買藥妝時可試戴 CASIO／SEIKO，記下型號與價格。</p>
 <ul><li><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%89%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%9B%E3%83%BC%E3%83%86%20%E6%B5%85%E8%8D%89%E5%BA%97" target="_blank" rel="noopener noreferrer">Google Maps</a></li><li><a href="https://www.donki.com/store/shop_detail.php?shop_id=326" target="_blank" rel="noopener noreferrer">唐吉訶德淺草店官網</a></li></ul>
 </article>
-</div><p class="shop-empty" hidden>這天沒有購物店家。</p></div>
+</div><p class="shop-empty" hidden>這天沒有這類店家。</p></div>
 <div class="shop-day" data-shop-day="2" hidden>
 <h3>上野・六本木・東京鐵塔</h3>
 <div class="grid shop-grid">
-<article class="card watch-shop" data-kind="food">
-<div class="meta-row"><span class="tag meal-label">甜點 · 上野動物園後</span></div>
+<article class="card watch-shop" data-kind="snack">
+<div class="meta-row"><span class="tag snack-label">甜點 · 上野動物園後</span></div>
 <h4>みはし 上野本店</h4>
 <p><strong>奶油餡蜜 · 約 ¥700</strong></p>
 <p>上野站不忍口附近，10:30 開門。</p>
 <ul><li><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%82%E3%82%93%E3%81%BF%E3%81%A4%20%E3%81%BF%E3%81%AF%E3%81%97%20%E4%B8%8A%E9%87%8E%E6%9C%AC%E5%BA%97%20%E5%8F%B0%E6%9D%B1%E5%8C%BA%E4%B8%8A%E9%87%8E4-9-7" target="_blank" rel="noopener noreferrer">Google Maps</a></li><li><a href="https://www.mihashi.co.jp/shop/" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li><li><a href="https://tabelog.com/tokyo/A1311/A131101/13003581/dtlrvwlst/B528502344/" target="_blank" rel="noopener noreferrer">食べログ</a></li></ul>
 </article>
-<article class="card watch-shop" data-kind="food">
+<article class="card watch-shop" data-kind="meal">
 <div class="meta-row"><span class="tag meal-label">午餐 · 六本木站</span></div>
 <h4>蕎麦六本</h4>
 <p><strong>冷蕎麥麵 · 約 ¥900–950</strong></p>
 <p>六本木站附近，週日 11:30 開門。</p>
 <ul><li><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E8%95%8E%E9%BA%A6%E5%85%AD%E6%9C%AC%20%E5%85%AD%E6%9C%AC%E6%9C%A8%20%E6%9D%B1%E4%BA%AC" target="_blank" rel="noopener noreferrer">Google Maps</a></li><li><a href="https://r.gnavi.co.jp/3j27cd5p0000/menu1/" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li><li><a href="https://tabelog.com/tokyo/A1307/A130701/13195931/dtlrvwlst/" target="_blank" rel="noopener noreferrer">食べログ</a></li></ul>
 </article>
-<article class="card watch-shop" data-kind="food">
+<article class="card watch-shop" data-kind="meal">
 <div class="meta-row"><span class="tag meal-label">晚餐 · 東京鐵塔周邊</span></div>
 <h4>しんぱち食堂 大門店</h4>
 <p><strong>炭烤魚定食 · 約 ¥800–1,100</strong></p>
@@ -1477,58 +1492,79 @@ h1, h2, h3, h4, strong, b,
 <ul><li><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%97%E3%82%93%E3%81%B1%E3%81%A1%E9%A3%9F%E5%A0%82%20%E5%A4%A7%E9%96%80%E5%BA%97%20%E6%B8%AF%E5%8C%BA%E8%8A%9D%E5%A4%A7%E9%96%802-4-3" target="_blank" rel="noopener noreferrer">Google Maps</a></li><li><a href="https://map.yahoo.co.jp/v3/place/LLy447BofQY/menu" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li><li><a href="https://x.com/torajicom/status/2050096128952352771" target="_blank" rel="noopener noreferrer">日本食記 · X</a></li></ul>
 </article>
 
-<article class="card watch-shop" data-kind="food">
-<div class="meta-row"><span class="tag meal-label">小吃 · 阿美橫丁</span></div>
+<article class="card watch-shop" data-kind="snack">
+<div class="meta-row"><span class="tag snack-label">小吃 · 阿美橫丁</span></div>
 <h4>肉の大山 上野店</h4>
 <p><strong>炸肉餅 · 約 ¥170 起</strong></p>
 <p>上野動物園出來後可外帶。</p>
 <ul><li><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E8%82%89%E3%81%AE%E5%A4%A7%E5%B1%B1%20%E4%B8%8A%E9%87%8E%E5%BA%97%20%E6%9D%B1%E4%BA%AC" target="_blank" rel="noopener noreferrer">Google Maps</a></li><li><a href="https://www.ohyama.com/ueno" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li><li><a href="https://tabelog.com/tokyo/A1311/A131101/13016728/" target="_blank" rel="noopener noreferrer">食べログ</a></li></ul>
 </article>
-<article class="card watch-shop" data-kind="food">
-<div class="meta-row"><span class="tag meal-label">甜點 · 六本木之丘</span></div>
+<article class="card watch-shop" data-kind="snack">
+<div class="meta-row"><span class="tag snack-label">甜點 · 六本木之丘</span></div>
 <h4>HARBS 六本木ヒルズ店</h4>
 <p><strong>水果千層蛋糕 · 約 ¥1,050</strong></p>
 <p>Hillside 1F，可接森美術館。</p>
 <ul><li><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=HARBS%20%E5%85%AD%E6%9C%AC%E6%9C%A8%E3%83%92%E3%83%AB%E3%82%BA%E5%BA%97%20%E6%9D%B1%E4%BA%AC" target="_blank" rel="noopener noreferrer">Google Maps</a></li><li><a href="https://www.harbs.co.jp/shop_kanto/" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li><li><a href="https://tabelog.com/tokyo/A1307/A130701/13034106/dtlrvwlst/B534008624/" target="_blank" rel="noopener noreferrer">食べログ</a></li></ul>
 </article>
-</div><p class="shop-empty" hidden>這天沒有購物店家。</p></div>
+<article class="card watch-shop" data-kind="meal">
+<div class="meta-row"><span class="tag meal-label">午餐 · 六本木站</span></div>
+<h4>豚組食堂</h4>
+<p><strong>炸豬排定食 · 午餐約 ¥1,000–2,000</strong></p>
+<p>日比谷線六本木 1c 出口，Metro Hat B2；11:00 開門。</p>
+<ul><li><a href="https://www.google.com/maps/search/?api=1&amp;query=%E8%B1%9A%E7%B5%84%E9%A3%9F%E5%A0%82%20%E5%85%AD%E6%9C%AC%E6%9C%A8%E3%83%92%E3%83%AB%E3%82%BA%20%E3%83%A1%E3%83%88%E3%83%AD%E3%83%8F%E3%83%83%E3%83%88" target="_blank" rel="noopener noreferrer">Google Maps</a></li><li><a href="https://www.butagumi.com/shokudo/access/index.html" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li><li><a href="https://tabelog.com/tokyo/A1307/A130701/13240721/" target="_blank" rel="noopener noreferrer">食べログ</a></li></ul>
+</article>
+</div><p class="shop-empty" hidden>這天沒有這類店家。</p></div>
 <div class="shop-day" data-shop-day="3" hidden>
 <h3>汐留・澀谷</h3>
 <div class="grid shop-grid">
-<article class="card watch-shop" data-kind="food">
+<article class="card watch-shop" data-kind="meal">
 <div class="meta-row"><span class="tag meal-label">午餐 · 濱離宮後</span></div>
 <h4>名物屋 汐留店</h4>
 <p><strong>刺身定食 · ¥1,320</strong></p>
 <p>汐留 City Center B1，平日午餐 11:00–15:00。</p>
 <ul><li><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%90%8D%E7%89%A9%E5%B1%8B%20%E6%B1%90%E7%95%99%E5%BA%97%20%E6%B1%90%E7%95%99%E3%82%B7%E3%83%86%E3%82%A3%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC" target="_blank" rel="noopener noreferrer">Google Maps</a></li><li><a href="https://meibutsuya-shimbashi.com/lunch/" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li><li><a href="https://tabelog.com/tokyo/A1301/A130103/13310233/dtlrvwlst/" target="_blank" rel="noopener noreferrer">食べログ</a></li></ul>
 </article>
-<article class="card watch-shop" data-kind="food">
+<article class="card watch-shop" data-kind="meal">
 <div class="meta-row"><span class="tag meal-label">晚餐 · 澀谷 PARCO 附近</span></div>
 <h4>焼肉ライク 渋谷宇田川町店</h4>
 <p><strong>薄切牛五花套餐 · ¥790 起</strong></p>
 <p>澀谷購物後的燒肉備案。</p>
 <ul><li><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E7%84%BC%E8%82%89%E3%83%A9%E3%82%A4%E3%82%AF%20%E6%B8%8B%E8%B0%B7%E5%AE%87%E7%94%B0%E5%B7%9D%E7%94%BA%E5%BA%97%20%E6%B8%8B%E8%B0%B7%E5%8C%BA%E5%AE%87%E7%94%B0%E5%B7%9D%E7%94%BA31-4" target="_blank" rel="noopener noreferrer">Google Maps</a></li><li><a href="https://yakiniku-like-shibuya-udagawacho.com/course/" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li><li><a href="https://tabelog.com/tokyo/A1303/A130301/13230742/" target="_blank" rel="noopener noreferrer">食べログ</a></li></ul>
 </article>
-<article class="card watch-shop" data-kind="food">
-<div class="meta-row"><span class="tag meal-label">甜點 · 銀座三越附近</span></div>
+<article class="card watch-shop" data-kind="snack">
+<div class="meta-row"><span class="tag snack-label">甜點 · 銀座三越附近</span></div>
 <h4>銀座木村家 本店</h4>
 <p><strong>酒種紅豆麵包；紅豆奶油麵包約 ¥380</strong></p>
 <p>1F 外帶，銀座站 A9 出口旁。</p>
 <ul><li><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%8A%80%E5%BA%A7%E6%9C%A8%E6%9D%91%E5%AE%B6%20%E6%9C%AC%E5%BA%97%20%E6%9D%B1%E4%BA%AC" target="_blank" rel="noopener noreferrer">Google Maps</a></li><li><a href="https://tabelog.com/tokyo/A1301/A130101/13002417/dtlrvwlst/B526912648/" target="_blank" rel="noopener noreferrer">食べログ</a></li></ul>
 </article>
-<article class="card watch-shop" data-kind="food">
-<div class="meta-row"><span class="tag meal-label">甜點 · 澀谷站八公口</span></div>
+<article class="card watch-shop" data-kind="snack">
+<div class="meta-row"><span class="tag snack-label">甜點 · 澀谷站八公口</span></div>
 <h4>渋谷西村 フルーツパーラー 道玄坂店</h4>
 <p><strong>水果聖代 · 約 ¥1,700</strong></p>
 <p>八公口過十字路口，店在 2F；最後點餐 20:20。</p>
 <ul><li><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%B8%8B%E8%B0%B7%E8%A5%BF%E6%9D%91%20%E3%83%95%E3%83%AB%E3%83%BC%E3%83%84%E3%83%91%E3%83%BC%E3%83%A9%E3%83%BC%20%E9%81%93%E7%8E%84%E5%9D%82%E5%BA%97%20%E6%9D%B1%E4%BA%AC" target="_blank" rel="noopener noreferrer">Google Maps</a></li><li><a href="https://map.yahoo.co.jp/v3/place/BkTtpQIlZ4U/menu" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li><li><a href="https://tabelog.com/tokyo/A1303/A130301/13001901/" target="_blank" rel="noopener noreferrer">食べログ</a></li></ul>
 </article>
-<article class="card watch-shop" data-kind="food">
-<div class="meta-row"><span class="tag meal-label">小吃 · BEAMS 附近</span></div>
+<article class="card watch-shop" data-kind="snack">
+<div class="meta-row"><span class="tag snack-label">小吃 · BEAMS 附近</span></div>
 <h4>ジャン・フランソワ 渋谷マークシティ</h4>
 <p><strong>可頌、明太子法國麵包</strong></p>
 <p>澀谷 Mark City 4F，可外帶。</p>
 <ul><li><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%BB%E3%83%95%E3%83%A9%E3%83%B3%E3%82%BD%E3%83%AF%20%E6%B8%8B%E8%B0%B7%E3%83%9E%E3%83%BC%E3%82%AF%E3%82%B7%E3%83%86%E3%82%A3%20%E6%9D%B1%E4%BA%AC" target="_blank" rel="noopener noreferrer">Google Maps</a></li><li><a href="https://www.s-markcity.co.jp/shop-restaurant/e-4-21/" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li><li><a href="https://map.yahoo.co.jp/v3/place/GadYwegTpTQ/menu" target="_blank" rel="noopener noreferrer">日本食記／菜單</a></li></ul>
+</article>
+<article class="card watch-shop" data-kind="snack">
+<div class="meta-row"><span class="tag snack-label">點心 · 小網神社參拜後</span></div>
+<h4>重盛永信堂</h4>
+<p><strong>豆沙人形燒 · 約 ¥150／個</strong></p>
+<p>9:00 開門，水天宮前站 7 號出口旁；可用現金。</p>
+<ul><li><a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%87%8D%E7%9B%9B%E6%B0%B8%E4%BF%A1%E5%A0%82%20%E6%97%A5%E6%9C%AC%E6%A9%8B%E4%BA%BA%E5%BD%A2%E7%94%BA2-1-1" target="_blank" rel="noopener noreferrer">Google Maps</a></li><li><a href="https://www.chuo-kanko.or.jp/pages/company_details/118812" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li><li><a href="https://tabelog.com/tokyo/A1302/A130204/13003054/dtlrvwlst/B533665894/" target="_blank" rel="noopener noreferrer">食べログ</a></li></ul>
+</article>
+<article class="card watch-shop" data-kind="meal">
+<div class="meta-row"><span class="tag meal-label">午餐 · 銀座往濱離宮途中</span></div>
+<h4>とんかつ銀座梅林 本店</h4>
+<p><strong>炸豬排丼 · 約 ¥1,400</strong></p>
+<p>11:30 開門；排隊久可改到汐留吃。</p>
+<ul><li><a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%A8%E3%82%93%E3%81%8B%E3%81%A4%E9%8A%80%E5%BA%A7%E6%A2%85%E6%9E%97%20%E6%9C%AC%E5%BA%97%20%E9%8A%80%E5%BA%A7" target="_blank" rel="noopener noreferrer">Google Maps</a></li><li><a href="https://www.ginzabairin.com/menu/index.php" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li><li><a href="https://map.yahoo.co.jp/v3/place/9tEaqIFZeWU" target="_blank" rel="noopener noreferrer">日本店家資訊</a></li></ul>
 </article>
 <article class="card watch-shop" data-kind="retail">
 <div class="meta-row"><span class="tag retail-label">購物</span><span class="tag">澀谷 · 17:30–19:00</span></div>
@@ -1541,37 +1577,44 @@ h1, h2, h3, h4, strong, b,
 <li><a href="https://www.biccamera.com/bc/i/shop/shoplist/shop008.jsp" target="_blank" rel="noopener noreferrer">澀谷東口店（本館 2F 相機／3F 手錶）</a></li>
 </ul>
 </article>
-</div><p class="shop-empty" hidden>這天沒有購物店家。</p></div>
+</div><p class="shop-empty" hidden>這天沒有這類店家。</p></div>
 <div class="shop-day" data-shop-day="4" hidden>
 <h3>押上・兩國</h3>
 <div class="grid shop-grid">
-<article class="card watch-shop" data-kind="food">
+<article class="card watch-shop" data-kind="meal">
 <div class="meta-row"><span class="tag meal-label">午餐 · JR 兩國站旁</span></div>
 <h4>ちゃんこ道場 両国駅前店</h4>
 <p><strong>雞肉相撲小鍋 ¥1,000／含刺身套餐 ¥1,700</strong></p>
 <p>小鍋每日限 10 份，午餐最後點餐 14:00。</p>
 <ul><li><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%A1%E3%82%83%E3%82%93%E3%81%93%E9%81%93%E5%A0%B4%20%E4%B8%A1%E5%9B%BD%E9%A7%85%E5%89%8D%E5%BA%97%20%E5%A2%A8%E7%94%B0%E5%8C%BA%E6%A8%AA%E7%B6%B21-3-12" target="_blank" rel="noopener noreferrer">Google Maps</a></li><li><a href="https://chankodoujyou.owst.jp/" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li><li><a href="https://tabelog.com/tokyo/A1312/A131201/13036713/dtlmenu/lunch/" target="_blank" rel="noopener noreferrer">食べログ</a></li></ul>
 </article>
-<article class="card watch-shop" data-kind="food">
+<article class="card watch-shop" data-kind="meal">
 <div class="meta-row"><span class="tag meal-label">午餐 · 兩國站東口</span></div>
 <h4>はせ川</h4>
 <p><strong>炸豬排定食 · 午餐約 ¥1,000–2,000</strong></p>
 <p>午餐不接受預約，最後點餐 14:30。</p>
 <ul><li><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%A8%E3%82%93%E3%81%8B%E3%81%A4%20%E3%81%AF%E3%81%9B%E5%B7%9D%20%E5%A2%A8%E7%94%B0%E5%8C%BA%E4%B8%A1%E5%9B%BD3-24-1" target="_blank" rel="noopener noreferrer">Google Maps</a></li><li><a href="https://tabelog.com/tokyo/A1312/A131201/13019126/" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li><li><a href="https://tabelog.com/tokyo/A1312/A131201/13019126/dtlrvwlst/" target="_blank" rel="noopener noreferrer">食べログ</a></li></ul>
 </article>
-<article class="card watch-shop" data-kind="food">
-<div class="meta-row"><span class="tag meal-label">甜點 · 墨田水族館後</span></div>
+<article class="card watch-shop" data-kind="snack">
+<div class="meta-row"><span class="tag snack-label">甜點 · 墨田水族館後</span></div>
 <h4>祇園辻利 東京ソラマチ店</h4>
 <p><strong>抹茶霜淇淋 · 約 ¥500</strong></p>
 <p>Solamachi 東側 6F，11:00 開門。</p>
 <ul><li><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E7%A5%87%E5%9C%92%E8%BE%BB%E5%88%A9%20%E6%9D%B1%E4%BA%AC%E3%82%BD%E3%83%A9%E3%83%9E%E3%83%81%E5%BA%97%20%E6%9D%B1%E4%BA%AC" target="_blank" rel="noopener noreferrer">Google Maps</a></li><li><a href="https://www.giontsujiri.co.jp/store/skytree/" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li><li><a href="https://tabelog.com/tokyo/A1312/A131203/13141261/dtlrvwlst/B534658567/" target="_blank" rel="noopener noreferrer">食べログ</a></li></ul>
 </article>
-<article class="card watch-shop" data-kind="food">
+<article class="card watch-shop" data-kind="meal">
 <div class="meta-row"><span class="tag meal-label">午餐 · JR 兩國站西口</span></div>
 <h4>根津 鶏はな 両国 江戸NOREN店</h4>
 <p><strong>赤雞親子丼 ¥1,490／東京軍雞親子丼 ¥1,770</strong></p>
 <p>西口直通江戶 NOREN，午餐至 14:00。</p>
 <ul><li><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%A0%B9%E6%B4%A5%20%E9%B6%8F%E3%81%AF%E3%81%AA%20%E4%B8%A1%E5%9B%BD%20%E6%B1%9F%E6%88%B8NOREN%E5%BA%97%20%E6%9D%B1%E4%BA%AC" target="_blank" rel="noopener noreferrer">Google Maps</a></li><li><a href="https://nezu-torihana-ryougoku.com/lunch.html" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li><li><a href="https://tabelog.com/tokyo/A1312/A131201/13201667/dtlmenu/lunch/" target="_blank" rel="noopener noreferrer">食べログ</a></li></ul>
+</article>
+<article class="card watch-shop" data-kind="snack">
+<div class="meta-row"><span class="tag snack-label">點心 · 北齋美術館附近</span></div>
+<h4>東あられ本舗 両国本店</h4>
+<p><strong>日式米菓、北齋系列</strong></p>
+<p>從美術館往石原方向，需小繞一段。</p>
+<ul><li><a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9D%B1%E3%81%82%E3%82%89%E3%82%8C%E6%9C%AC%E9%8B%AA%20%E4%B8%A1%E5%9B%BD%E6%9C%AC%E5%BA%97%20%E5%A2%A8%E7%94%B0%E5%8C%BA%E7%9F%B3%E5%8E%9F2-15-10" target="_blank" rel="noopener noreferrer">Google Maps</a></li><li><a href="https://visit-sumida.jp/spot/6009/" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li><li><a href="https://tabelog.com/tokyo/A1312/A131201/13053240/" target="_blank" rel="noopener noreferrer">食べログ</a></li></ul>
 </article>
 <article class="card watch-shop" data-kind="retail">
 <div class="meta-row"><span class="tag retail-label">購物</span><span class="tag">晴空塔 · 10:00 後</span></div>
@@ -1579,7 +1622,7 @@ h1, h2, h3, h4, strong, b,
 <p>商場 3F · 10:00–21:00。逛完墨田水族館再去。</p>
 <ul><li><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=TiCTAC%20%E6%9D%B1%E4%BA%AC%E3%82%BD%E3%83%A9%E3%83%9E%E3%83%81%E5%BA%97" target="_blank" rel="noopener noreferrer">Google Maps</a></li><li><a href="https://www.tictac-web.com/shoplist/shopTictac/0707" target="_blank" rel="noopener noreferrer">TiCTAC 分店官網</a></li></ul>
 </article>
-</div><p class="shop-empty" hidden>這天沒有購物店家。</p></div>
+</div><p class="shop-empty" hidden>這天沒有這類店家。</p></div>
 <p class="shop-price-note">價格為查詢時的參考。</p>
 </section>
 <section id="hotel">
