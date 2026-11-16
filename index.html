@@ -622,11 +622,10 @@ main{padding-top:calc(var(--nav-h) + 34px)}section{margin-top:68px;scroll-margin
 .check-item:has(input:checked){background:#B9DAA5}
 .pack-box{border-width:3px}
 .footer-note{background:#A8D3E6;border-width:3px;border-radius:24px}
-.cloud-one{animation:drift 8s ease-in-out infinite alternate}.train{animation:trainfloat 6s ease-in-out infinite}
-@keyframes trainfloat{0%,100%{transform:translateX(0)}50%{transform:translateX(8px)}}
+.cloud-one{animation:drift 8s ease-in-out infinite alternate}
 @media (min-width:760px){.hero-layout{display:flex!important}.hero-illustration{max-width:770px;margin:0 auto}.hero-copy{width:min(100%,770px);margin:0 auto}.countdown{gap:17px}.count-box{padding:18px}.hero .hero-copy>p:not(.countdown-caption){margin-bottom:22px}}
 @media (max-width:575px){.topbar-inner{flex-wrap:nowrap}.brand span{display:inline;font-size:.92rem}.brand-badge{width:34px;height:34px}.nav-scroll{gap:2px}.nav-link{padding:7px 10px;font-size:.9rem}.nav-link[href="#home"]{padding:4px 10px}.container{width:min(100% - 26px,940px)}.hero-copy{padding-top:26px}section{margin-top:54px}.event-head{flex-wrap:wrap}.event-head .time{order:-1;width:100%;color:#665e5b}.count-box{padding:10px 2px 9px;border-radius:17px}.countdown{gap:8px}.section-icon{width:50px;height:50px}}
-@media (prefers-reduced-motion:reduce){.cloud-one,.train{animation:none!important}}
+@media (prefers-reduced-motion:reduce){.cloud-one{animation:none!important}}
 </style><style>
 /* Unified, minimal pictograms: consistent rounded graphite strokes. */
 .section-icon{display:grid;place-items:center;font-size:initial}
@@ -923,15 +922,21 @@ h1, h2, h3, h4, strong, b,
 #watch-shops .section-icon { background: var(--yellow); }
 .watch-shop { padding: 16px 18px; }
 .watch-shop .meta-row { margin: 0 0 8px; }
-.watch-shop h3 { font-size: 1.12rem; }
+.watch-shop h4 { font-size: 1.12rem; margin: 0; }
 .watch-shop p { margin: 6px 0 0; font-size: .9rem; }
 .watch-shop ul { display: flex; flex-wrap: wrap; gap: 6px 16px; padding: 0; margin: 8px 0 0; list-style: none; }
 .watch-shop li { font-size: .9rem; }
 .watch-shop a { color: var(--ink); text-decoration: underline; text-underline-offset: .18em; }
 .watch-shop a:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 4px; }
-.watch-shop--first .watch-shop-label { background: var(--yellow); }
-.watch-shop--second .watch-shop-label { background: var(--green); }
-.watch-shop--backup .watch-shop-label { background: var(--blue); }
+#watch-shops [hidden] { display: none !important; }
+.shop-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin-bottom: 14px; }
+.shop-toolbar label { display: inline-flex; align-items: center; gap: 8px; }
+.shop-toolbar select { font: inherit; color: var(--ink); background: white; border: 2px solid var(--ink); border-radius: 999px; padding: 6px 10px; }
+.shop-day > h3 { margin: 0 0 10px; font-size: 1.1rem; }
+.watch-shop .meal-label { background: var(--green); }
+.watch-shop .retail-label { background: var(--blue); }
+.shop-empty, .shop-price-note { margin: 10px 0 0; font-size: .88rem; }
+@media (min-width: 700px) { .shop-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 </style>
 </head>
 <body>
@@ -1217,10 +1222,80 @@ h1, h2, h3, h4, strong, b,
 <p>有空再逛</p>
 </div>
 </div>
-<div class="grid">
-<article class="card watch-shop watch-shop--first">
-<div class="meta-row"><span class="tag watch-shop-label">首選推薦</span><span class="tag">DAY 3 · 11/30（一）17:30–19:00</span></div>
-<h3>BIC CAMERA 澀谷站周邊</h3>
+<div class="shop-toolbar">
+<label>日期 <select id="shop-day"><option value="1">Day 1 · 11/28（六）</option><option value="2">Day 2 · 11/29（日）</option><option value="3">Day 3 · 11/30（一）</option><option value="4">Day 4 · 12/1（二）</option></select></label>
+<label>類型 <select id="shop-type"><option value="all">全部</option><option value="food">美食・小吃</option><option value="retail">購物</option></select></label>
+</div>
+<div class="shop-day" data-shop-day="1">
+<h3>淺草・藏前</h3>
+<div class="grid shop-grid">
+<article class="card watch-shop" data-kind="food">
+<div class="meta-row"><span class="tag meal-label">晚餐 · 淺草寺旁</span></div>
+<h4>浅草名代らーめん 与ろゐ屋</h4>
+<p><strong>柚香醬油拉麵 · 約 ¥1,000</strong></p>
+<p>最後點餐 20:30。</p>
+<ul><li><a href="https://yoroiya.jp/" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li><li><a href="https://tabelog.com/tokyo/A1311/A131102/13003715/dtlrvwlst/B455326535/" target="_blank" rel="noopener noreferrer">食べログ</a></li></ul>
+</article>
+<article class="card watch-shop" data-kind="food">
+<div class="meta-row"><span class="tag meal-label">晚餐 · 藏前飯店附近</span></div>
+<h4>麺屋 上々</h4>
+<p><strong>鴨鹽拉麵 · 約 ¥1,050</strong></p>
+<p>週六晚間 18:00–21:00。</p>
+<ul><li><a href="https://tabelog.com/tokyo/A1311/A131103/13247871/" target="_blank" rel="noopener noreferrer">食べログ</a></li></ul>
+</article>
+<article class="card watch-shop" data-kind="retail">
+<div class="meta-row"><span class="tag retail-label">購物</span><span class="tag">淺草 · 18:50–19:30</span></div>
+<h4>唐吉訶德淺草店</h4>
+<p>買藥妝時可試戴 CASIO／SEIKO，記下型號與價格。</p>
+<ul><li><a href="https://www.donki.com/store/shop_detail.php?shop_id=326" target="_blank" rel="noopener noreferrer">唐吉訶德淺草店官網</a></li></ul>
+</article>
+</div><p class="shop-empty" hidden>這天沒有購物店家。</p></div>
+<div class="shop-day" data-shop-day="2" hidden>
+<h3>上野・六本木・東京鐵塔</h3>
+<div class="grid shop-grid">
+<article class="card watch-shop" data-kind="food">
+<div class="meta-row"><span class="tag meal-label">甜點 · 上野動物園後</span></div>
+<h4>みはし 上野本店</h4>
+<p><strong>奶油餡蜜 · 約 ¥700</strong></p>
+<p>上野站不忍口附近，10:30 開門。</p>
+<ul><li><a href="https://www.mihashi.co.jp/shop/" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li><li><a href="https://tabelog.com/tokyo/A1311/A131101/13003581/dtlrvwlst/B528502344/" target="_blank" rel="noopener noreferrer">食べログ</a></li></ul>
+</article>
+<article class="card watch-shop" data-kind="food">
+<div class="meta-row"><span class="tag meal-label">午餐 · 六本木站</span></div>
+<h4>蕎麦六本</h4>
+<p><strong>冷蕎麥麵 · 約 ¥900–950</strong></p>
+<p>六本木站附近，週日 11:30 開門。</p>
+<ul><li><a href="https://r.gnavi.co.jp/3j27cd5p0000/menu1/" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li><li><a href="https://tabelog.com/tokyo/A1307/A130701/13195931/dtlrvwlst/" target="_blank" rel="noopener noreferrer">食べログ</a></li></ul>
+</article>
+<article class="card watch-shop" data-kind="food">
+<div class="meta-row"><span class="tag meal-label">晚餐 · 東京鐵塔周邊</span></div>
+<h4>しんぱち食堂 大門店</h4>
+<p><strong>炭烤魚定食 · 約 ¥800–1,100</strong></p>
+<p>大門站旁，登塔前有空再去。</p>
+<ul><li><a href="https://map.yahoo.co.jp/v3/place/LLy447BofQY/menu" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li><li><a href="https://x.com/torajicom/status/2050096128952352771" target="_blank" rel="noopener noreferrer">日本食記 · X</a></li></ul>
+</article>
+
+</div><p class="shop-empty" hidden>這天沒有購物店家。</p></div>
+<div class="shop-day" data-shop-day="3" hidden>
+<h3>汐留・澀谷</h3>
+<div class="grid shop-grid">
+<article class="card watch-shop" data-kind="food">
+<div class="meta-row"><span class="tag meal-label">午餐 · 濱離宮後</span></div>
+<h4>名物屋 汐留店</h4>
+<p><strong>刺身定食 · ¥1,320</strong></p>
+<p>汐留 City Center B1，平日午餐 11:00–15:00。</p>
+<ul><li><a href="https://meibutsuya-shimbashi.com/lunch/" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li><li><a href="https://tabelog.com/tokyo/A1301/A130103/13310233/dtlrvwlst/" target="_blank" rel="noopener noreferrer">食べログ</a></li></ul>
+</article>
+<article class="card watch-shop" data-kind="food">
+<div class="meta-row"><span class="tag meal-label">晚餐 · 澀谷 PARCO 附近</span></div>
+<h4>焼肉ライク 渋谷宇田川町店</h4>
+<p><strong>薄切牛五花套餐 · ¥790 起</strong></p>
+<p>澀谷購物後的燒肉備案。</p>
+<ul><li><a href="https://yakiniku-like-shibuya-udagawacho.com/course/" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li><li><a href="https://tabelog.com/tokyo/A1303/A130301/13230742/" target="_blank" rel="noopener noreferrer">食べログ</a></li></ul>
+</article>
+<article class="card watch-shop" data-kind="retail">
+<div class="meta-row"><span class="tag retail-label">購物</span><span class="tag">澀谷 · 17:30–19:00</span></div>
+<h4>BIC CAMERA 澀谷站周邊</h4>
 <p>PARCO → 澀谷站。可看 SEIKO、CITIZEN、CASIO。</p>
 <p><strong>Ricoh GR 相機周邊</strong>　備用電池、充電器、手腕帶、相機包。出示相機型號確認相容性與庫存。</p>
 <p>結帳前確認免稅與折價券</p>
@@ -1229,19 +1304,32 @@ h1, h2, h3, h4, strong, b,
 <li><a href="https://www.biccamera.com/bc/i/shop/shoplist/shop008.jsp" target="_blank" rel="noopener noreferrer">澀谷東口店（本館 2F 相機／3F 手錶）</a></li>
 </ul>
 </article>
-<article class="card watch-shop watch-shop--second">
-<div class="meta-row"><span class="tag watch-shop-label">次選推薦</span><span class="tag">DAY 1 · 11/28（六）18:50–19:30</span></div>
-<h3>唐吉訶德淺草店</h3>
-<p>買藥妝時可試戴 CASIO／SEIKO，記下型號與價格。</p>
-<ul><li><a href="https://www.donki.com/store/shop_detail.php?shop_id=326" target="_blank" rel="noopener noreferrer">唐吉訶德淺草店官網</a></li></ul>
+</div><p class="shop-empty" hidden>這天沒有購物店家。</p></div>
+<div class="shop-day" data-shop-day="4" hidden>
+<h3>押上・兩國</h3>
+<div class="grid shop-grid">
+<article class="card watch-shop" data-kind="food">
+<div class="meta-row"><span class="tag meal-label">午餐 · JR 兩國站旁</span></div>
+<h4>ちゃんこ道場 両国駅前店</h4>
+<p><strong>雞肉相撲小鍋 ¥1,000／含刺身套餐 ¥1,700</strong></p>
+<p>小鍋每日限 10 份，午餐最後點餐 14:00。</p>
+<ul><li><a href="https://chankodoujyou.owst.jp/" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li><li><a href="https://tabelog.com/tokyo/A1312/A131201/13036713/dtlmenu/lunch/" target="_blank" rel="noopener noreferrer">食べログ</a></li></ul>
 </article>
-<article class="card watch-shop watch-shop--backup">
-<div class="meta-row"><span class="tag watch-shop-label">晴空塔備案</span><span class="tag">DAY 4 · 12/1（二）10:00 後</span></div>
-<h3>TiCTAC 東京晴空塔 Solamachi 店</h3>
+<article class="card watch-shop" data-kind="food">
+<div class="meta-row"><span class="tag meal-label">午餐 · 兩國站東口</span></div>
+<h4>はせ川</h4>
+<p><strong>炸豬排定食 · 午餐約 ¥1,000–2,000</strong></p>
+<p>午餐不接受預約，最後點餐 14:30。</p>
+<ul><li><a href="https://tabelog.com/tokyo/A1312/A131201/13019126/" target="_blank" rel="noopener noreferrer">店家資訊／菜單</a></li><li><a href="https://tabelog.com/tokyo/A1312/A131201/13019126/dtlrvwlst/" target="_blank" rel="noopener noreferrer">食べログ</a></li></ul>
+</article>
+<article class="card watch-shop" data-kind="retail">
+<div class="meta-row"><span class="tag retail-label">購物</span><span class="tag">晴空塔 · 10:00 後</span></div>
+<h4>TiCTAC 東京晴空塔 Solamachi 店</h4>
 <p>商場 3F · 10:00–21:00。逛完墨田水族館再去。</p>
 <ul><li><a href="https://www.tictac-web.com/shoplist/shopTictac/0707" target="_blank" rel="noopener noreferrer">TiCTAC 分店官網</a></li></ul>
 </article>
-</div>
+</div><p class="shop-empty" hidden>這天沒有購物店家。</p></div>
+<p class="shop-price-note">價格為查詢時的參考。</p>
 </section>
 <section id="hotel">
 <div class="section-title">
@@ -1422,6 +1510,25 @@ h1, h2, h3, h4, strong, b,
         document.getElementById(target).classList.add('active');
       });
     });
+
+    const shopDay = document.getElementById('shop-day');
+    const shopType = document.getElementById('shop-type');
+    const shopDays = document.querySelectorAll('[data-shop-day]');
+
+    function filterShops() {
+      shopDays.forEach(day => {
+        day.hidden = day.dataset.shopDay !== shopDay.value;
+        const cards = Array.from(day.querySelectorAll('[data-kind]'));
+        cards.forEach(card => {
+          card.hidden = shopType.value !== 'all' && card.dataset.kind !== shopType.value;
+        });
+        day.querySelector('.shop-empty').hidden = cards.some(card => !card.hidden);
+      });
+    }
+
+    shopDay.addEventListener('change', filterShops);
+    shopType.addEventListener('change', filterShops);
+    filterShops();
 
     const checkboxes = document.querySelectorAll('input[type="checkbox"][data-key]');
     function syncLabel(input) {
