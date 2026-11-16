@@ -919,6 +919,20 @@ h1, h2, h3, h4, strong, b,
   box-shadow: none !important;
 }
 </style>
+<style>
+#watch-shops .section-icon { background: var(--yellow); }
+.watch-shop { padding: 16px 18px; }
+.watch-shop .meta-row { margin: 0 0 8px; }
+.watch-shop h3 { font-size: 1.12rem; }
+.watch-shop p { margin: 6px 0 0; font-size: .9rem; }
+.watch-shop ul { display: flex; flex-wrap: wrap; gap: 6px 16px; padding: 0; margin: 8px 0 0; list-style: none; }
+.watch-shop li { font-size: .9rem; }
+.watch-shop a { color: var(--ink); text-decoration: underline; text-underline-offset: .18em; }
+.watch-shop a:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 4px; }
+.watch-shop--first .watch-shop-label { background: var(--yellow); }
+.watch-shop--second .watch-shop-label { background: var(--green); }
+.watch-shop--backup .watch-shop-label { background: var(--blue); }
+</style>
 </head>
 <body>
 <header class="topbar">
@@ -931,6 +945,7 @@ h1, h2, h3, h4, strong, b,
 <a class="nav-link" href="#home">首頁</a>
 <a class="nav-link" href="#flights">航班</a>
 <a class="nav-link" href="#itinerary">每日行程</a>
+<a class="nav-link" href="#watch-shops">店家參考</a>
 <a class="nav-link" href="#hotel">住宿</a>
 <a class="nav-link" href="#prep">出發前</a>
 <a class="nav-link" href="#packing">行李</a>
@@ -1203,6 +1218,38 @@ h1, h2, h3, h4, strong, b,
 <div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">出發前往成田機場</div><p class="event-note">建議搭京成 Access 特急直通列車。</p></div><div class="time">14:45–16:30</div></div><div class="meta-row"><span class="tag train">京成／都營</span><span class="tag">約 65–85 分</span></div></div></div>
 <div class="timeline-item"><div class="event-card"><div class="event-head"><div><div class="event-title">報到、出境、候機 → CI109</div><p class="event-note">保留充足緩衝，安心返台。</p></div><div class="time">16:30–19:30</div></div><div class="meta-row"><span class="tag air"><svg aria-hidden="true" class="tiny-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.85" viewbox="0 0 24 24"><path d="M4 12 20 6l-4 6 4 6Z"></path><path d="M10 12H4"></path></svg>返程</span><span class="tag must">必去</span></div></div></div>
 </div>
+</div>
+</section>
+<section id="watch-shops" aria-labelledby="watch-shops-title">
+<div class="section-title">
+<div class="section-icon" aria-hidden="true"><svg class="line-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6V3h6v3m-6 12v3h6v-3"/><rect x="6" y="6" width="12" height="12" rx="4"/><path d="M12 9v3l2 1"/></svg></div>
+<div>
+<h2 id="watch-shops-title">順路買錶｜店家參考</h2>
+<p>有時間再逛，依當天行程彈性安排。</p>
+</div>
+</div>
+<div class="grid">
+<article class="card watch-shop watch-shop--first">
+<div class="meta-row"><span class="tag watch-shop-label">首選推薦</span><span class="tag">DAY 3 · 11/30（一）17:30–19:00</span></div>
+<h3>BIC CAMERA 澀谷站周邊</h3>
+<p>逛完澀谷 PARCO，往車站走時擇一看 SEIKO、CITIZEN、CASIO。現貨與免稅、折價券適用條件可在結帳前向店員確認。</p>
+<ul>
+<li><a href="https://www.biccamera.com/bc/i/shop/shoplist/shop004.jsp" target="_blank" rel="noopener noreferrer">澀谷八公口店（B 館 3F）</a></li>
+<li><a href="https://www.biccamera.com/bc/i/shop/shoplist/shop008.jsp" target="_blank" rel="noopener noreferrer">澀谷東口店（本館 3F）</a></li>
+</ul>
+</article>
+<article class="card watch-shop watch-shop--second">
+<div class="meta-row"><span class="tag watch-shop-label">次選推薦</span><span class="tag">DAY 1 · 11/28（六）18:50–19:30</span></div>
+<h3>唐吉訶德淺草店</h3>
+<p>買藥妝、零食時，可順手問有沒有 CASIO 或 SEIKO，先試戴、記下型號和價格。</p>
+<ul><li><a href="https://www.donki.com/store/shop_detail.php?shop_id=326" target="_blank" rel="noopener noreferrer">唐吉訶德淺草店官網</a></li></ul>
+</article>
+<article class="card watch-shop watch-shop--backup">
+<div class="meta-row"><span class="tag watch-shop-label">晴空塔備案</span><span class="tag">DAY 4 · 12/1（二）10:00 後</span></div>
+<h3>TiCTAC 東京晴空塔 Solamachi 店</h3>
+<p>位於商場 3F，營業時間 10:00–21:00。逛完墨田水族館若還有空檔，可以在離開押上前順路看一下。</p>
+<ul><li><a href="https://www.tictac-web.com/shoplist/shopTictac/0707" target="_blank" rel="noopener noreferrer">TiCTAC 分店官網</a></li></ul>
+</article>
 </div>
 </section>
 <section id="hotel">
